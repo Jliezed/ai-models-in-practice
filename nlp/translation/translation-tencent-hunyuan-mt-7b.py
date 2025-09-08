@@ -52,7 +52,7 @@ def main():
     print("Model loaded successfully!\n")
     
     # Load Excel file
-    excel_file = "sample_to_translate.xlsx"
+    excel_file = "data/sample_to_translate.xlsx"
     print(f"Reading {excel_file}...")
     df = pd.read_excel(excel_file)
     
@@ -89,7 +89,7 @@ def main():
         print("-" * 60)
     
     # Save updated Excel file
-    output_file = "sample_to_translate_hunyuan_translations.xlsx"
+    output_file = "data/sample_to_translate_hunyuan_translations.xlsx"
     df.to_excel(output_file, index=False)
     print(f"\nTranslations saved to {output_file}")
     
