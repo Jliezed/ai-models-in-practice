@@ -14,7 +14,6 @@
 - 🔄 **Resume Capability** - Intelligent skip of already translated entries  
 - 🎯 **Multi-language Support** - French, Spanish, German, Chinese translations
 - 📈 **Progress Tracking** - Real-time translation progress with detailed logging
-- ⚡ **Error Recovery** - Graceful error handling with detailed error reporting
 
 ## 🤖 Model Information
 
@@ -28,15 +27,6 @@
 | **🌐 Languages** | 100+ languages supported |
 | **📝 License** | Apache 2.0 |
 | **🔗 HF Link** | [`tencent/Hunyuan-MT-7B`](https://huggingface.co/tencent/Hunyuan-MT-7B) |
-
-## 🎯 Use Cases
-
-| Use Case | Description | Best For |
-|---|---|---|
-| 📚 **Bulk Translation** | Process large Excel datasets | Research, Data Analysis |
-| 🌐 **Content Localization** | Multi-language content creation | Marketing, Documentation |
-| 🔬 **Research Studies** | Cross-linguistic analysis | Academic Research |
-| 🏢 **Enterprise Solutions** | International business content | Corporate Communications |
 
 ## 🛠️ Quick Start
 
@@ -101,11 +91,6 @@ The script uses Tencent's recommended inference parameters:
 | **🎮 GPU Memory** | 8GB VRAM | 16GB+ VRAM |
 | **💾 Storage** | 15GB free | 30GB+ free |
 | **🐍 Python** | 3.8+ | 3.10+ |
-
-### ⏱️ **Performance Metrics**
-- **📊 Dataset Size**: 55 texts × 4 languages = 220 translations
-- **⏰ Processing Time**: ~2-5 seconds per translation (GPU-dependent)
-- **🔄 Total Time**: ~20-40 minutes for full dataset
 
 ## 📁 Project Structure
 
