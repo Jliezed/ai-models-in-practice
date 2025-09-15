@@ -22,7 +22,7 @@ A curated collection of practical AI model implementations and examples for real
   - **Model**: Tencent HunYuan MT-7B
   - **Purpose**: High-quality multi-language translation
   - **Languages**: English → French, Spanish, German, Chinese
-  - **Features**: Batch translation from Excel files, conversation-based prompting
+  - **Features**: Batch translation from Excel files
 
 ---
 
