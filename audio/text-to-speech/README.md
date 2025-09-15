@@ -1,4 +1,4 @@
-# 🎤 Advanced Text-to-Speech with Kokoro TTS
+# 🎤 Text-to-Speech with Kokoro TTS
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![Kokoro](https://img.shields.io/badge/🎵%20Kokoro-TTS-purple)](https://huggingface.co/kokoro)
@@ -13,7 +13,6 @@
 - 📊 **Excel Integration** - Direct Excel file processing with intelligent column detection
 - 🎵 **Multi-voice Support** - Multiple voice options with customizable settings
 - 📁 **Organized Output** - Structured audio file generation with descriptive naming
-- 🔄 **Demo Mode** - Automatic fallback with sample texts when Excel file is missing
 - 📈 **Progress Tracking** - Real-time processing status with detailed logging
 
 ## 🤖 Model Information
@@ -43,13 +42,10 @@ pip install -r requirements.txt
 #### 1️⃣ **Prepare Excel File**
 Create an Excel file with this structure:
 
-| Column | Purpose | Required |
-|---|---|---|
-| `text` | Text to convert to speech | ✅ Primary |
-| `sentence` | Alternative text column | ⭐ Fallback |
-| `content` | Alternative text column | ⭐ Fallback |
-| `message` | Alternative text column | ⭐ Fallback |
-| `speech` | Alternative text column | ⭐ Fallback |
+| Column     | Purpose                   | Required |
+|------------|---------------------------|---|
+| `language` | Language of the text      | ✅ Primary |
+| `text`     | Text to convert to speech | ✅ Primary |
 
 #### 2️⃣ **Run Text-to-Speech**
 ```bash
@@ -125,34 +121,22 @@ Customize voice and language settings:
 
 ### 📊 **Processing Modes**
 - 🔄 **Standard Mode**: Process Excel file with text entries
-- 🎯 **Demo Mode**: Use predefined sample texts
 - 📈 **Batch Mode**: Process multiple texts efficiently
 
 ## ⚡ Performance & Requirements
-
-### 💻 **System Requirements**
-
-| Component | Minimum | Recommended |
-|---|---|---|
-| **🧠 RAM** | 4GB | 8GB+ |
-| **🎮 GPU Memory** | Optional | 4GB+ VRAM |
-| **💾 Storage** | 2GB free | 10GB+ free |
-| **🐍 Python** | 3.8+ | 3.10+ |
 
 ## 📁 Project Structure
 
 ```
 audio/text-to-speech/
 ├── 📖 README.md                           # This documentation
-├── 🐍 text-to-speech-kokoro-improved.py  # Enhanced TTS script
-├── 🐍 text-to-speech-kokoro-82m.py       # Original script
+├── 🐍 text-to-speech-kokoro-82m.py       # Main script
 ├── 📋 requirements.txt                    # Python dependencies
 └── data/
     ├── 📊 sample_text_to_speech.xlsx      # Input Excel file
     └── generated_audio/                   # Output directory
-        ├── 🎵 000_Hello_world_This_is.wav
-        ├── 🎵 001_The_quick_brown_fox.wav
-        └── 📋 generation_summary.txt
+        ├── row_01_English_af_nicole.wav
+        ├── row_02_English_af_river.wav
 ```
 
 ## 🔧 Troubleshooting
